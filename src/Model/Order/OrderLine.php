@@ -22,4 +22,9 @@ class OrderLine
     {
         return $this->sellPrice->multiply($this->quantity);
     }
+
+    public function getQuantity(): int
+    {
+        return $this->quantity;
+    }
 }
